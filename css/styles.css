@@ -1,0 +1,178 @@
+/* ============== COMMON STYLES ============== */
+:root {
+    --iris: #4D5AE5;
+    --ocean: #404BBF;
+    --white: #FFFFFF;
+    --navy-blue: #2E2F42;
+    --slate: #434455;
+    --cloud: #F4F4FD;
+    --cornflower:#E7E9FC;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+    background-color: var(--white);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--navy-blue);
+}
+/* ============== COMMON STYLES ============== */
+
+/* ============== HEDER STYLES ============== */
+.logo{
+    font-family: 'Raleway', sans-serif;
+    color: var(--iris);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;       
+}
+
+.accent {
+    color: var(--navy-blue);
+}
+
+.nav-link {
+    color: var(--navy-blue);
+    font-weight: 500;
+    font-style: normal;
+}
+
+address {
+    font-style: normal;
+}
+
+.address-link {
+    color: var(--slate);
+    font-family: Roboto;
+    
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.address-link:hover,
+.address-link:focus {
+    color: var(--ocean);
+}
+/* ============== HEDER STYLES ============== */
+
+/* ============== HERO STYLES ============== */
+.hero{
+    background-color: var(--navy-blue);
+}
+
+.hero-title {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--white);
+}
+
+.btn {
+   font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    background-color: #4D5AE5;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--ocean);
+}
+
+/* ============== HERO STYLES ============== */
+
+/* ============== Features STYLES ============== */
+
+.subtitle {
+    color: var(--navy-blue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+
+/* ============== Features STYLES ============== */
+
+
+/* ============== Team STYLES ============== */
+
+
+.team {
+    background-color: var(--cloud);
+}
+
+.team-item {
+    background-color: var(--white);
+}
+
+/* ============== Team STYLES ============== */
+
+/* ============== Footer STYLES ============== */
+
+.footer {
+    background-color: var(--navy-blue);
+}
+
+.footer-logo {
+    color: var(--cloud);
+}
+
+.footer-text{
+color: var(--cloud);
+}
+
+/* ============== Footer STYLES ============== */
+
+/* ============== PORTFOLIO STYLES ============== */
+
+.portfolio-btn{
+    border: 1px solid var(--cornflower);
+    background: var(--cloud);
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--iris);
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background: var(--ocean);
+    color: var(--white);
+}
+
+.text{
+    color: var(--slate);
+}
+/* ============== PORTFOLIO STYLES ============== */
