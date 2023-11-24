@@ -9,6 +9,28 @@
     --cornflower:#E7E9FC;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 .list {
     list-style-type: none;
 }
@@ -31,7 +53,16 @@ body {
     background-color: var(--white);
 }
 
+.container {
+    max-width:1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;     
+}
+
 .section-title {
+    margin-bottom: 72px;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -40,9 +71,39 @@ body {
     text-transform: capitalize;
     color: var(--navy-blue);
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 /* ============== COMMON STYLES ============== */
 
 /* ============== HEDER STYLES ============== */
+
+.heder-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+
 .logo{
     font-family: 'Raleway', sans-serif;
     color: var(--iris);
@@ -57,7 +118,16 @@ body {
     color: var(--navy-blue);
 }
 
+.nav-list {
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+}
+
 .nav-link {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--navy-blue);
     font-weight: 500;
     font-style: normal;
@@ -67,7 +137,15 @@ address {
     font-style: normal;
 }
 
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
 .address-link {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--slate);
     font-family: Roboto;
     
@@ -86,7 +164,16 @@ address {
     background-color: var(--navy-blue);
 }
 
+.hero-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
 .hero-title {
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
     text-align: center;
     font-size: 56px;
     font-weight: 700;
@@ -96,6 +183,7 @@ address {
 }
 
 .btn {
+    display: block;
    font-family: inherit;
     font-size: 16px;
     font-weight: 500;
@@ -103,6 +191,7 @@ address {
     letter-spacing: 0.04em;
     color: var(--white);
     background-color: #4D5AE5;
+   
 }
 
 .btn:hover,
@@ -110,11 +199,34 @@ address {
     background-color: var(--ocean);
 }
 
+.hero-btn {
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    padding: 16px 32px;
+    min-width: 169px;
+}
+
 /* ============== HERO STYLES ============== */
 
 /* ============== Features STYLES ============== */
 
+.features {
+    padding-bottom: 0px;
+}
+
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-item {
+    /* flex-basis: calc((100%-72px)/4); */
+    flex-grow: 1;
+}
+
 .subtitle {
+    margin-bottom: 8px;
     color: var(--navy-blue);
     font-size: 20px;
     font-weight: 500;
@@ -125,6 +237,19 @@ address {
 
 /* ============== Features STYLES ============== */
 
+/* ============== Work STYLES ============== */
+
+.work-list {
+    display: flex;
+    gap: 24px;
+}
+
+/* ============== WORK STYLES ============== */
+
+
+
+
+
 
 /* ============== Team STYLES ============== */
 
@@ -133,8 +258,18 @@ address {
     background-color: var(--cloud);
 }
 
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
 .team-item {
     background-color: var(--white);
+}
+
+.wrap {
+    padding: 32px 16px;
+    text-align: center;
 }
 
 /* ============== Team STYLES ============== */
@@ -145,19 +280,41 @@ address {
     background-color: var(--navy-blue);
 }
 
+.footer-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .footer-logo {
+    /* display: block; */
+    /* margin-bottom: 18px; */
     color: var(--cloud);
 }
 
 .footer-text{
-color: var(--cloud);
+    margin-top: 18px;
+    width: 264px;
+    color: var(--cloud);
 }
 
 /* ============== Footer STYLES ============== */
 
 /* ============== PORTFOLIO STYLES ============== */
 
+.portfolio {
+    padding-top: 96px;
+}
+
+.filter {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
 .portfolio-btn{
+    display: block;
+    padding: 12px 24px;
     border: 1px solid var(--cornflower);
     background: var(--cloud);
     text-align: center;
@@ -170,6 +327,17 @@ color: var(--cloud);
 .portfolio-btn:focus {
     background: var(--ocean);
     color: var(--white);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.portfolio-wrap {
+    padding: 32px 16px;
 }
 
 .text{
