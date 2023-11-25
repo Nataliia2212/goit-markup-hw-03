@@ -222,7 +222,8 @@ address {
 
 .features-item {
     /* flex-basis: calc((100%-72px)/4); */
-    flex-grow: 1;
+   
+   
 }
 
 .subtitle {
