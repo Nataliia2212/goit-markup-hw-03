@@ -290,6 +290,9 @@ address {
 .footer-logo {
     display: inline-block;
     margin-bottom: 16px;
+}
+
+.footer-span {
     color: var(--cloud);
 }
 
@@ -339,6 +342,7 @@ address {
 }
 
 .portfolio-wrap {
+    border-top: none;
     border: 1px solid #e7e9fc;
     padding: 32px 16px;
 }
